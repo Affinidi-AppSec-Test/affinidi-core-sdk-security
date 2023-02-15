@@ -1,0 +1,16 @@
+name: Security Testing
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+
+
+jobs:
+  sonarcloud:
+    name: sonarcloud
+    uses: affinidi/pipeline-security/.github/workflows/security-scanners.yml@feat-sonarcloud
+    secrets: inherit
