@@ -12,6 +12,6 @@ on:
 jobs:
   sonarcloud:
     name: sonarcloud
-    uses: Affinidi-AppSec-Test/pipeline-security/.github/workflows/security-scanners.yml@main
+    uses: Affinidi-AppSec-Test/pipeline-security/.github/workflows/security-scanners.yml@feat-sonarcloud
     secrets: 
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
